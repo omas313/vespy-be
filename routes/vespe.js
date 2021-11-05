@@ -24,6 +24,7 @@ router.post("/", [auth], async (req, res) => {
     modello: {
       _id: modello._id,
       nome: modello.nome,
+      cilindrata: modello.cilindrata,
     },
     km: req.body.km,
     tariffe: req.body.tariffe,
@@ -47,6 +48,7 @@ router.put("/:id", [auth], async (req, res) => {
       modello: {
         _id: modello._id,
         nome: modello.nome,
+        cilindrata: modello.cilindrata,
       },
       km: req.body.km,
       tariffe: req.body.tariffe,

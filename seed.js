@@ -48,7 +48,7 @@ async function seed() {
   await Model.deleteMany({});
 
   for (let model of data) {
-    const { modelloId } = await new Model({
+    const { _id: modelloId } = await new Model({
       nome: model.nome,
       cilindrata: model.cilindrata,
     }).save();
