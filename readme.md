@@ -1,63 +1,40 @@
 ## Introduction
 
-This project is the backend of Vidly, an imaginary video rental app. I've used Vidly as an example in several of my online programming courses, such as:
+This project is the backend of Vespy, an imaginary [vespa](https://www.google.com/search?q=vespa&client=opera-gx&hs=PWb&sxsrf=AOaemvLKOY_v7rCQZjy9NIzp188iTT9hjg:1636489725379&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjLwommj4z0AhXE4KQKHW8iB_YQ_AUoAXoECAIQAw&biw=1503&bih=759&dpr=1.25) rental app.
 
-- https://codewithmosh.com/p/mastering-react
-- https://codewithmosh.com/p/the-complete-node-js-course
-- https://codewithmosh.com/p/asp-net-mvc
-
-This is the implementation of Vidly in Node.js.
+Created with Node.js for practice purposes. It uses Express.js and MongoDB, and is consumed by a Front-End React app.
 
 ## Setup
 
-Make sure to follow all these steps exactly as explained below. Do not miss any steps or you won't be able to run this application.
+### Install Node and MongoDB
 
-### Install MongoDB
+Intall Node.js.
+Install MongoDB Community Edition (free).
 
-To run this project, you need to install the latest version of MongoDB Community Edition first.
+Open terminal and run DB server:
 
-https://docs.mongodb.com/manual/installation/
-
-Once you install MongoDB, make sure it's running.
+    mongod
 
 ### Install the Dependencies
 
-Next, from the project folder, install the dependencies:
+In root project folder:
 
     npm i
 
-### Populate the Database
+### Seed the DB
 
     node seed.js
-
-### Run the Tests
-
-You're almost done! Run the tests to make sure everything is working:
-
-    npm test
-
-All tests should pass.
 
 ### Start the Server
 
     node index.js
 
-This will launch the Node server on port 3900. If that port is busy, you can set a different point in config/default.json.
+This will launch the Node server on port 3900.
 
-Open up your browser and head over to:
+### Interact with the Server
 
-http://localhost:3900/api/genres
+Open up a browser and head over to:
 
-You should see the list of genres. That confirms that you have set up everything successfully.
+    http://localhost:3900/api/vespe
 
-### (Optional) Environment Variables
-
-If you look at config/default.json, you'll see a property called jwtPrivateKey. This key is used to encrypt JSON web tokens. So, for security reasons, it should not be checked into the source control. I've set a default value here to make it easier for you to get up and running with this project. For a production scenario, you should store this key as an environment variable.
-
-On Mac:
-
-    export vidly_jwtPrivateKey=yourSecureKey
-
-On Windows:
-
-    set vidly_jwtPrivateKey=yourSecureKey
+It should respond with a list of Vespe.
