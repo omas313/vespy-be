@@ -2,7 +2,14 @@
 
 This project is the backend of Vespy, an imaginary [vespa](https://www.google.com/search?q=vespa&client=opera-gx&hs=PWb&sxsrf=AOaemvLKOY_v7rCQZjy9NIzp188iTT9hjg:1636489725379&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjLwommj4z0AhXE4KQKHW8iB_YQ_AUoAXoECAIQAw&biw=1503&bih=759&dpr=1.25) rental app.
 
-Created with Node.js for practice purposes. It uses Express.js and MongoDB, and is consumed by a Front-End React app.
+Created with Node.js for practice purposes. It uses Express.js and MongoDB.
+
+Hosted on Heroku with these end points for consumption:
+
+- [Models](https://calm-sea-53463.herokuapp.com/api/models)
+- [Vespe](https://calm-sea-53463.herokuapp.com/api/vespe)
+
+Built to be consumed by a [Front-End React app](https://github.com/omas313/vespy) hosted on netlify [here](https://vespy.netlify.app).
 
 ## Setup
 
